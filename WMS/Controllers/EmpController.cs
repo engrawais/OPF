@@ -167,7 +167,6 @@ namespace WMS.Controllers
             ViewBag.TypeID = new SelectList(db.EmpTypes.OrderBy(s=>s.TypeName), "TypeID", "TypeName");
             ViewBag.EmpID = new SelectList(db.EmpFaces.OrderBy(s=>s.Face1), "EmpID", "Face1");
             ViewBag.EmpID = new SelectList(db.EmpFps.OrderBy(s=>s.Fp1), "EmpID", "Fp1");
-            ViewBag.EmpID = new SelectList(db.LvQuotas.OrderBy(s=>s.CompanyID), "EmpID", "EmpID");
             ViewBag.CatID = new SelectList(db.Categories.OrderBy(s=>s.CatName), "CatID", "CatName");
             ViewBag.DeptID = new SelectList(db.Departments.OrderBy(s=>s.DeptName), "DeptID", "DeptName");
             return View();
@@ -270,7 +269,6 @@ namespace WMS.Controllers
             ViewBag.TypeID = new SelectList(db.EmpTypes.OrderBy(s=>s.TypeName), "TypeID", "TypeName");
             ViewBag.EmpID = new SelectList(db.EmpFaces.OrderBy(s=>s.Face1), "EmpID", "Face1");
             ViewBag.EmpID = new SelectList(db.EmpFps.OrderBy(s=>s.Fp1), "EmpID", "Fp1");
-            ViewBag.EmpID = new SelectList(db.LvQuotas.OrderBy(s=>s.CompanyID), "EmpID", "EmpID");
             ViewBag.CatID = new SelectList(db.Categories.OrderBy(s=>s.CatName), "CatID", "CatName");
             ViewBag.DeptID = new SelectList(db.Departments.OrderBy(s=>s.DeptName), "DeptID", "DeptName");
             }
@@ -325,7 +323,6 @@ namespace WMS.Controllers
                 ViewBag.TypeID = new SelectList(db.EmpTypes.OrderBy(s=>s.TypeName), "TypeID", "TypeName", emp.TypeID);
                 ViewBag.EmpID = new SelectList(db.EmpFaces.OrderBy(s=>s.Face1), "EmpID", "Face1");
                 ViewBag.EmpID = new SelectList(db.EmpFps.OrderBy(s=>s.Fp1), "EmpID", "Fp1");
-                ViewBag.EmpID = new SelectList(db.LvQuotas.OrderBy(s=>s.CompanyID), "EmpID", "EmpID");
                 ViewBag.DeptID = new SelectList(db.Departments.OrderBy(s=>s.DeptName), "DeptID", "DeptName", emp.Section.DeptID);
             }
              catch(Exception ex)
@@ -402,7 +399,6 @@ namespace WMS.Controllers
                 ViewBag.TypeID = new SelectList(db.EmpTypes.OrderBy(s=>s.TypeName), "TypeID", "TypeName");
                 ViewBag.EmpID = new SelectList(db.EmpFaces.OrderBy(s=>s.Face1), "EmpID", "Face1");
                 ViewBag.EmpID = new SelectList(db.EmpFps.OrderBy(s=>s.Fp1), "EmpID", "Fp1");
-                ViewBag.EmpID = new SelectList(db.LvQuotas.OrderBy(s=>s.CompanyID), "EmpID", "EmpID");
                 ViewBag.CatID = new SelectList(db.Categories.OrderBy(s=>s.CatName), "CatID", "CatName");
                 ViewBag.DeptID = new SelectList(db.Departments.OrderBy(s=>s.DeptName), "DeptID", "DeptName");
                 return View(emp);
@@ -422,7 +418,6 @@ namespace WMS.Controllers
                 ViewBag.TypeID = new SelectList(db.EmpTypes.OrderBy(s=>s.TypeName), "TypeID", "TypeName");
                 ViewBag.EmpID = new SelectList(db.EmpFaces.OrderBy(s=>s.Face1), "EmpID", "Face1");
                 ViewBag.EmpID = new SelectList(db.EmpFps.OrderBy(s=>s.Fp1), "EmpID", "Fp1");
-                ViewBag.EmpID = new SelectList(db.LvQuotas.OrderBy(s=>s.CompanyID), "EmpID", "EmpID");
                 ViewBag.CatID = new SelectList(db.Categories.OrderBy(s=>s.CatName), "CatID", "CatName");
                 ViewBag.DeptID = new SelectList(db.Departments.OrderBy(s=>s.DeptName), "DeptID", "DeptName");
                 return View(emp);

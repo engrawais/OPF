@@ -9,7 +9,6 @@ namespace WMS.Controllers
     public class LeaveController
     {
         #region -- Add Leaves--
-        List<LvQuota> _empQuota = new List<LvQuota>();
         public string AddLeavesToLvApplication()
         {
             string error = "";

@@ -94,7 +94,6 @@ namespace WMS.Models
         public virtual ICollection<EmpPhoto> EmpPhotoes { get; set; }
         public virtual ICollection<LvApplication> LvApplications { get; set; }
         public virtual ICollection<LvConsumed> LvConsumeds { get; set; }
-        public virtual LvQuota LvQuota { get; set; }
         public virtual ICollection<LvShort> LvShorts { get; set; }
     }
 }

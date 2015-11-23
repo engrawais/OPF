@@ -49,7 +49,6 @@ namespace WMS.Models
         public DbSet<Department> Departments { get; set; }
         public DbSet<Designation> Designations { get; set; }
         public DbSet<Division> Divisions { get; set; }
-        public DbSet<DOJJ> DOJJs { get; set; }
         public DbSet<DownloadTime> DownloadTimes { get; set; }
         public DbSet<DutyCode> DutyCodes { get; set; }
         public DbSet<DutyTime> DutyTimes { get; set; }
@@ -61,12 +60,10 @@ namespace WMS.Models
         public DbSet<EmpFace> EmpFaces { get; set; }
         public DbSet<EmpFp> EmpFps { get; set; }
         public DbSet<EmpPhoto> EmpPhotoes { get; set; }
-        public DbSet<EmpPresence> EmpPresences { get; set; }
         public DbSet<EmpRdr> EmpRdrs { get; set; }
         public DbSet<EmpType> EmpTypes { get; set; }
         public DbSet<Grade> Grades { get; set; }
         public DbSet<Holiday> Holidays { get; set; }
-        public DbSet<ImportLeave> ImportLeaves { get; set; }
         public DbSet<JobCard> JobCards { get; set; }
         public DbSet<JobCardApp> JobCardApps { get; set; }
         public DbSet<JobCardEmp> JobCardEmps { get; set; }
@@ -75,7 +72,6 @@ namespace WMS.Models
         public DbSet<LvApplication> LvApplications { get; set; }
         public DbSet<LvConsumed> LvConsumeds { get; set; }
         public DbSet<LvData> LvDatas { get; set; }
-        public DbSet<LvQuota> LvQuotas { get; set; }
         public DbSet<LvShort> LvShorts { get; set; }
         public DbSet<LvType> LvTypes { get; set; }
         public DbSet<Option> Options { get; set; }
@@ -88,24 +84,18 @@ namespace WMS.Models
         public DbSet<ReaderVendor> ReaderVendors { get; set; }
         public DbSet<Reason> Reasons { get; set; }
         public DbSet<Region> Regions { get; set; }
-        public DbSet<Remark> Remarks { get; set; }
         public DbSet<Roster> Rosters { get; set; }
         public DbSet<RosterApp> RosterApps { get; set; }
         public DbSet<RosterDetail> RosterDetails { get; set; }
         public DbSet<RosterType> RosterTypes { get; set; }
-        public DbSet<SampleTable> SampleTables { get; set; }
         public DbSet<Section> Sections { get; set; }
         public DbSet<ServiceLog> ServiceLogs { get; set; }
-        public DbSet<setDateTime> setDateTimes { get; set; }
         public DbSet<Shift> Shifts { get; set; }
         public DbSet<Site> Sites { get; set; }
-        public DbSet<sysdiagram> sysdiagrams { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserLocation> UserLocations { get; set; }
         public DbSet<UserModule> UserModules { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
-        public DbSet<UserSafety> UserSafeties { get; set; }
-        public DbSet<ZTable> ZTables { get; set; }
         public DbSet<EmergencyView> EmergencyViews { get; set; }
         public DbSet<EmpView> EmpViews { get; set; }
         public DbSet<TestView> TestViews { get; set; }
