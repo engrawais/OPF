@@ -61,10 +61,10 @@
                        
                         <div class="row">
                             <div class="col-md-6">
-                                From : <input id="dateFrom"  class="input-sm"  runat="server" type="date" />
+                                From : <input id="dateFrom"  class="input-sm"  runat="server" type="" />
                             </div>
                             <div class="col-md-6">
-                                To : <input id="dateTo" class="input-sm"  runat="server" type="date" />
+                                To : <input id="dateTo" class="input-sm"  runat="server" type="" />
                             </div>
                         </div>
                         <hr />

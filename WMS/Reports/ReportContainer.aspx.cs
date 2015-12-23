@@ -1644,26 +1644,28 @@ namespace WMS.Reports
         {
             TAS2013Entities ctx = new TAS2013Entities();
             companyimage = new List<EmpPhoto>();
-            if (fm.CompanyFilter.Count > 1)
-            {
-                companyimage.Add(ctx.EmpPhotoes.Where(aa => aa.PhotoID == 4785).First());
-            }
-            else
-            {
-                if (fm.CompanyFilter.Count > 0)
-                {
-                    int id = Int32.Parse(fm.CompanyFilter.First().ID);
-                    Company comp = ctx.Companies.Where(aa => aa.CompID == id).FirstOrDefault();
-                    companyimage.Add(ctx.EmpPhotoes.Where(aa => aa.PhotoID == comp.ImageID).First());
-                }
-                else
-                {
-                    companyimage.Add(ctx.EmpPhotoes.Where(aa => aa.PhotoID == 4785).First());
-                }
-            }
-
+            companyimage.Add(ctx.EmpPhotoes.Where(aa => aa.PhotoID == 454).First());
             return companyimage;
 
+            //if (fm.CompanyFilter.Count > 1)
+            //{
+            //    companyimage.Add(ctx.EmpPhotoes.Where(aa => aa.PhotoID == 4785).First());
+            //}
+            //else
+            //{
+            //    if (fm.CompanyFilter.Count > 0)
+            //    {
+            //        int id = Int32.Parse(fm.CompanyFilter.First().ID);
+            //        Company comp = ctx.Companies.Where(aa => aa.CompID == id).FirstOrDefault();
+            //        //here there is no ImageID of comp thats why it throws exception, so thats why i m commenting out.
+            //        //companyimage.Add(ctx.EmpPhotoes.Where(aa => aa.PhotoID == comp.ImageID).First());
+            //    }
+            //    else
+            //    {
+            //        companyimage.Add(ctx.EmpPhotoes.Where(aa => aa.PhotoID == 4785).First());
+            //    }
+            //}
+            
         }
 
         //ViewAttData

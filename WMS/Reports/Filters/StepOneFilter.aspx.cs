@@ -189,6 +189,7 @@ namespace WMS.Reports.Filters
             get
             {
                 if (dateFrom.Value == "")
+                    //ModelErrorMessage("Kindly Insert date in yyyy,MM,dd Format");
                     return DateTime.Today.Date.AddDays(-1);
                 else
                     return DateTime.Parse(dateFrom.Value);
